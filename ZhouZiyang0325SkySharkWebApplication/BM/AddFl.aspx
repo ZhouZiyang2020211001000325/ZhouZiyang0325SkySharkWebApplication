@@ -39,6 +39,10 @@
                     </td>
                 </tr>
                 <tr>
+                    <td colspan="3">
+                        <asp:Label ID="lblMessage" runat="server" Text="" ForeColor="Red" Font-Bold="true"></asp:Label></td>
+                </tr>
+                <tr>
                     <td>
                         <asp:Label ID="Label2" runat="server" Text="Flight Number"></asp:Label>
                     </td>
@@ -54,8 +58,9 @@
                         <asp:Label ID="Label3" runat="server" Text="Departure Time"></asp:Label>
                     </td>
                     <td>
+                        <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
                         <asp:TextBox ID="txtDepartureTime" runat="server"></asp:TextBox>
-                    </td>
+                        (HH:MM)</td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtDepartureTime" ErrorMessage="Departure Time Required"></asp:RequiredFieldValidator>
                     </td>
@@ -76,7 +81,9 @@
                         <asp:Label ID="Label5" runat="server" Text="Arrival Time"></asp:Label>
                     </td>
                     <td>
+                        <asp:Calendar ID="Calendar2" runat="server"></asp:Calendar>
                         <asp:TextBox ID="txtArrivalTime" runat="server"></asp:TextBox>
+                        (HH:MM)
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtArrivalTime" ErrorMessage="Arrival Time Required"></asp:RequiredFieldValidator>
@@ -151,8 +158,8 @@
                 <tr>
                     <td></td>
                     <td>
-                        <asp:Button ID="Button1" runat="server" Text="Submit" />
-                        <asp:Button ID="Button2" runat="server" Text="Cancle" />
+                        <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />
+                        <asp:Button ID="Button2" runat="server" Text="Cancle" OnClick="Button2_Click" />
                     </td>
                     <td></td>
                 </tr>

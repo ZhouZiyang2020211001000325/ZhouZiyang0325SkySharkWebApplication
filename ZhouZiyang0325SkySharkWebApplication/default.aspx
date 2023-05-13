@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="ZhouZiyang0325SkySharkWebApplication._default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="ZhouZiyang0325SkySharkWebApplication._default"  Debug="true"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     HOME
 </asp:Content>
